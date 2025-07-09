@@ -57,3 +57,5 @@ A modern, full-stack inventory management system that supports **barcode scannin
 ### 🛠 Login Credential
    - username = "admin" 
    - password = "admin123"
+
+## Must use your own environment variables to run the project. For this, check out the .env.local file for reference.
