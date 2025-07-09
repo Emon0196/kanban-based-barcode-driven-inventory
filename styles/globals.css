@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom global variables (colors, fonts, breakpoints, etc.) */
+  --font-sans: "Inter", sans-serif;
+  --color-primary: #3b82f6; /* Blue-500 */
+  --breakpoint-md: 768px;
+}
+
+/* Custom styles using Tailwind directives */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* You can add @variant, @plugin, or @source directives as needed */
