@@ -1,7 +1,8 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-const handler = NextAuth({
+// ✅ Export this for server-side session access
+export const authOptions = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
@@ -28,6 +29,9 @@ const handler = NextAuth({
     strategy: "jwt",
   },
   secret: process.env.NEXTAUTH_SECRET,
-});
+};
+
+// ✅ Export the handler like before
+const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
