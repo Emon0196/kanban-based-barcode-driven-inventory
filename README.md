@@ -53,9 +53,16 @@ A modern, full-stack inventory management system that supports **barcode scannin
 1. **Clone the repo**
    ```bash
    git clone https://github.com/Emon0196/kanban-based-barcode-driven-inventory.git
-
+2. **Install dependencies**
+   ```bash
+   npm install
+   
 ### 🛠 Login Credential
    - username = "admin" 
    - password = "admin123"
 
 ## Must use your own environment variables to run the project. For this, check out the .env.local file for reference.
+
+### Vercel live server link
+   ```bash
+   https://kanban-based-barcode-driven-invento.vercel.app/
